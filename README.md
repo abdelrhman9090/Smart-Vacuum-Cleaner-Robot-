@@ -1,6 +1,6 @@
 # 🧹 Smart Vacuum Cleaner Robot  
 ### Autonomous Mobile Robot for Indoor Cleaning  
-**Academic  Project**
+**Academic Project**
 
 ---
 
@@ -45,7 +45,9 @@ The system uses a **servo-mounted ultrasonic sensor** to scan left and right dir
 | Servo Motor (SG90) | Sensor rotation |
 | Battery Pack | Power supply |
 | Robot Chassis | Mechanical structure |
-| Vacuum Motor (Optional) | Cleaning simulation |
+| Small DC Motor | Vacuum motor |
+| Plastic Fan | Air suction (impeller) |
+| Plastic Bottle | Dust container |
 
 ---
 
@@ -72,16 +74,45 @@ The system uses a **servo-mounted ultrasonic sensor** to scan left and right dir
 
 ---
 
+## 🧹 Vacuum System Design
+
+The vacuum cleaning mechanism is a **custom-built, low-cost system** designed using simple and easily available materials.  
+It simulates the basic operation of a real vacuum cleaner.
+
+### 🔧 Vacuum Components
+
+- Small DC Motor  
+- Plastic Fan (Impeller)  
+- Plastic Bottle (Vacuum Chamber)  
+
+### ⚙️ Working Principle
+
+1. The **DC motor rotates the plastic fan** at high speed  
+2. The rotating fan creates **negative air pressure** inside the plastic bottle  
+3. Air is sucked from an inlet at the bottom of the robot  
+4. Dust and lightweight particles are pulled into the bottle  
+5. The bottle acts as a **dust collection container**
+
+This design provides a practical demonstration of vacuum principles while keeping the system:
+- Low cost  
+- Lightweight  
+- Easy to assemble  
+
+
+---
+
 ## 📷 System Images
 
 ### 🔧 Hardware Setup
-![WhatsApp Image 2025-12-29 at 1 23 46 AM](https://github.com/user-attachments/assets/eff1d0d2-d468-4b42-8a0d-d260b1f2654d)
+![WhatsApp Image 2025-12-29 at 1 23 46 AM](https://github.com/user-attachments/assets/2429aac1-7591-4c61-9e38-2cd1c138d19b)
 
 
+---
 
 ## 📚 Software Requirements
 
 ### Libraries Used
+
 - AFMotor  
 - NewPing  
 - Servo  
@@ -90,6 +121,3 @@ The system uses a **servo-mounted ultrasonic sensor** to scan left and right dir
 #include <AFMotor.h>
 #include <NewPing.h>
 #include <Servo.h>
-
-
-

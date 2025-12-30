@@ -1,6 +1,6 @@
 # 🧹 Smart Vacuum Cleaner Robot  
 ### Autonomous Mobile Robot for Indoor Cleaning  
-**Academic / Graduation Project**
+**Academic  Project**
 
 ---
 

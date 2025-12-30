@@ -104,7 +104,8 @@ This design provides a practical demonstration of vacuum principles while keepin
 ## 📷 System Images
 
 ### 🔧 Hardware Setup
-![WhatsApp Image 2025-12-29 at 1 23 46 AM](https://github.com/user-attachments/assets/2429aac1-7591-4c61-9e38-2cd1c138d19b)
+![Uploading Wiring Diagram of the Autonomous Vacuum Robot.png…]()
+
 
 
 ---

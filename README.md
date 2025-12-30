@@ -75,17 +75,9 @@ The system uses a **servo-mounted ultrasonic sensor** to scan left and right dir
 ## 📷 System Images
 
 ### 🔧 Hardware Setup
-![Robot Hardware](images/hardware.jpg)
+![WhatsApp Image 2025-12-29 at 1 23 46 AM](https://github.com/user-attachments/assets/eff1d0d2-d468-4b42-8a0d-d260b1f2654d)
 
-### 🔌 Wiring Diagram
-![Wiring Diagram](images/wiring_diagram.png)
 
-> 📁 **Note:**  
-> Create a folder named `images` in the repository and place:
-> - `hardware.jpg`
-> - `wiring_diagram.png`
-
----
 
 ## 📚 Software Requirements
 
@@ -98,3 +90,8 @@ The system uses a **servo-mounted ultrasonic sensor** to scan left and right dir
 #include <AFMotor.h>
 #include <NewPing.h>
 #include <Servo.h>
+#define CRUISE_SPEED   150
+#define TURN_SPEED     170
+#define BACK_SPEED     140
+#define SAFE_DISTANCE  18
+

@@ -90,8 +90,6 @@ The system uses a **servo-mounted ultrasonic sensor** to scan left and right dir
 #include <AFMotor.h>
 #include <NewPing.h>
 #include <Servo.h>
-#define CRUISE_SPEED   150
-#define TURN_SPEED     170
-#define BACK_SPEED     140
-#define SAFE_DISTANCE  18
+
+
 

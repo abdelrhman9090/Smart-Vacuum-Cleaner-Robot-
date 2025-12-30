@@ -11,7 +11,7 @@ When an obstacle is detected, the robot:
 5-Performs a pivot turn and continues cleaning
 This behavior mimics real-world robotic vacuum cleaners.
 
-#🧠 Key Features
+# 🧠 Key Features
 🧹 Autonomous navigation for vacuum-cleaning simulation
 🚗 4WD motor control using Arduino Motor Shield (L293D)
 📏 Obstacle detection via ultrasonic sensor (HC-SR04)
@@ -20,7 +20,7 @@ This behavior mimics real-world robotic vacuum cleaners.
 🔁 Intelligent pivot turning (one-side movement)
 🛑 Collision avoidance logic
 
-#🧩 Hardware Components
+# 🧩 Hardware Components
 
 Arduino Uno
 Arduino Motor Shield (L293D)

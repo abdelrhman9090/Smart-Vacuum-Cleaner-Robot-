@@ -104,9 +104,7 @@ This design provides a practical demonstration of vacuum principles while keepin
 ## 📷 System Images
 
 ### 🔧 Hardware Setup
-![Uploading Wiring Diagram of the Autonomous Vacuum Robot.png…]()
-
-
+<img width="1344" height="768" alt="Wiring Diagram of the Autonomous Vacuum Robot" src="https://github.com/user-attachments/assets/7eec9d84-1430-4aad-8e03-e1f7bfcc38ac" />
 
 ---
 

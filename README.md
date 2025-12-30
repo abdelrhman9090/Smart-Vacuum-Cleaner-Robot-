@@ -1,33 +1,78 @@
-# 🧹Smart-Vacuum-Cleaner-Robot
-A smart vacuum cleaner robot built using Arduino, Motor Shield, Ultrasonic Sensor, and a servo motor to autonomously navigate indoor environments, avoid obstacles, and simulate intelligent vacuum-cleaning behavior.
+# 🧹 Smart Vacuum Cleaner Robot
 
-# 📷 Project Description
-The Smart Vacuum Cleaner Robot moves autonomously while scanning its surroundings.
-When an obstacle is detected, the robot:
-1-Stops immediately
-2-Moves backward to create space
-3-Scans right and left using a servo-mounted ultrasonic sensor
-4-Chooses the direction with more free space
-5-Performs a pivot turn and continues cleaning
-This behavior mimics real-world robotic vacuum cleaners.
+An Arduino-based **Smart Vacuum Cleaner Robot** that autonomously navigates indoor environments, avoids obstacles, and simulates intelligent vacuum-cleaning behavior using ultrasonic sensing and servo-based scanning.
 
-# 🧠 Key Features
-🧹 Autonomous navigation for vacuum-cleaning simulation
-🚗 4WD motor control using Arduino Motor Shield (L293D)
-📏 Obstacle detection via ultrasonic sensor (HC-SR04)
-🔄 Servo-based environmental scanning
-⚡ Smooth forward acceleration
-🔁 Intelligent pivot turning (one-side movement)
-🛑 Collision avoidance logic
+---
 
-# 🧩 Hardware Components
+## 📌 Project Overview
 
-Arduino Uno
-Arduino Motor Shield (L293D)
-4 × DC Motors (TT motors)
-Ultrasonic Sensor (HC-SR04)
-Servo Motor (SG90)
-Battery Pack
-Vacuum fan / DC suction motor (optional)
-Robot chassis
-Jumper wires
+The robot continuously moves forward while cleaning.  
+When an obstacle is detected, it:
+1. Stops
+2. Moves backward slightly
+3. Scans the environment (right & left)
+4. Chooses the direction with more free space
+5. Performs a pivot turn and continues moving
+
+---
+
+## 🧠 Features
+
+- Autonomous navigation
+- Obstacle detection and avoidance
+- Servo-based scanning system
+- Smooth motor acceleration
+- Pivot turning for tight spaces
+- Arduino Motor Shield control
+
+---
+
+## 🧩 Hardware Requirements
+
+- Arduino Uno
+- Arduino Motor Shield (L293D)
+- 4 × DC Motors (TT Motors)
+- Ultrasonic Sensor (HC-SR04)
+- Servo Motor (SG90)
+- Battery Pack
+- Robot Chassis
+- Jumper Wires
+- Vacuum motor (optional)
+
+---
+
+## 🔌 Pin Configuration
+
+### Ultrasonic Sensor
+| Pin | Arduino |
+|----|---------|
+| Trig | A0 |
+| Echo | A1 |
+
+### Servo Motor
+| Pin | Arduino |
+|----|---------|
+| Signal | D10 |
+
+### Motor Shield
+| Motor | Position |
+|------|----------|
+| M1 | Front Left |
+| M2 | Front Right |
+| M3 | Back Left |
+| M4 | Back Right |
+
+---
+
+## 📚 Required Libraries
+
+Install the following libraries using Arduino Library Manager:
+
+- AFMotor
+- NewPing
+- Servo
+
+```cpp
+#include <AFMotor.h>
+#include <NewPing.h>
+#include <Servo.h>
